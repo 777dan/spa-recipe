@@ -1,6 +1,19 @@
 import React from 'react';
+import RecipeCard from "../components/RecipeCard";
+import { useState, useEffect } from "react";
+import { fetchRandomRecipes } from "../utils/utils";
 
 const About = () => {
+    const [randRecipe, setRandRecipe] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const result = await fetchRandomRecipes();
+            setRandRecipe(result.recipes[0]);
+        }
+
+        fetchData();
+    }, []);
     return (
         <div className="container my-5">
             <h1>About Us</h1>
@@ -27,6 +40,12 @@ const About = () => {
                 <li>Recipe photos</li>
                 <li>Options for different dietary needs (vegetarian, vegan, gluten-free, etc.)</li>
             </ul>
+            <RecipeCard
+                key={randRecipe.id}
+                image={randRecipe.image}
+                title={randRecipe.title}
+                setCardDetails={null}
+            />
         </div>
     );
 }

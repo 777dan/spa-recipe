@@ -7,7 +7,7 @@ const fetchRandomRecipes = async () => {
     throw new Error(`Error: ${response.status} ${response.statusText}`);
   }
   const result = await response.json();
-  // console.log("API Response:", result);
+  // console.log("API Response:", result.recipes[0]);
   return result;
 };
 

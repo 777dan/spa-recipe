@@ -32,12 +32,11 @@ const Home = ({ searchResult = [] }) => {
             key={result.id}
             image={result.image}
             title={result.title}
-            brand={result.brand}
             setCardDetails={setCardDetails}
           />
         ))}
       </div>
-      <div className="modal" id="cardModal">
+      {/* <div className="modal" id="cardModal">
         <div className="modal-dialog">
           <div className="modal-content">
 
@@ -61,7 +60,7 @@ const Home = ({ searchResult = [] }) => {
 
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
