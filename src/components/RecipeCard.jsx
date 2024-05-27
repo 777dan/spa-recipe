@@ -8,7 +8,10 @@ const RecipeCard = ({ image, title, brand, setCardDetails }) => {
         const cardId = cardSearch.results[0].id;
         const cardDetails = await fetchRecipesDetails(cardId)
         setCardDetails(cardDetails);
-        // console.log(cardDetails);
+        // let steps = cardDetails.analyzedInstructions[0].steps;
+        // steps.map((step) => (
+        //     console.log(step.step)
+        // )) 
     }
     return (
         <div className="col-md-4 mb-4">

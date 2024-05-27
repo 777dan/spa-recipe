@@ -47,7 +47,12 @@ const Home = ({ searchResult = [] }) => {
             </div>
 
             <div className="modal-body">
-              what..
+              <ol>
+              {cardDetails.analyzedInstructions ? (
+                cardDetails.analyzedInstructions[0].steps.map((step, index) => (
+                  <li key={index}>{step.step}</li>
+                ))) : (<p>Loading...</p>)}
+                </ol>
             </div>
 
             <div className="modal-footer">

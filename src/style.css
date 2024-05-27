@@ -1,0 +1,19 @@
+body {
+    background-color: #eaf4e5;
+}
+
+.navbar  {
+    background-color: #c9eeb7;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #c9dcc4;
+}
+
+footer {
+    background-color: #c9eeb7;
+}

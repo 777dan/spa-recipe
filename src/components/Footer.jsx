@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white py-4">
+    <footer className="text-black py-4">
       <div className="container">
         <div className="row">
           <div className="col-md-4">
@@ -12,17 +12,15 @@ const Footer = () => {
           <div className="col-md-4">
             <h5>Links</h5>
             <ul className="list-unstyled">
-              <li><a href="#home" className="text-white">Home</a></li>
-              <li><a href="#about" className="text-white">About Us</a></li>
-              <li><a href="#services" className="text-white">Services</a></li>
-              <li><a href="#contact" className="text-white">Contact</a></li>
+              <li><a href="/" className="text-black">Home</a></li>
+              <li><a href="/about" className="text-black">About Us</a></li>
             </ul>
           </div>
           <div className="col-md-4">
             <h5>Contact Us</h5>
-            <p>Address: 123 Example Street, City, Country</p>
-            <p>Phone: +1 (234) 567-89-00</p>
-            <p>Email: info@example.com</p>
+            <p>Address: 414 Akademika Pavlova Street, Kharkiv, Ukraine</p>
+            <p>Phone: +380 (050) 625-58-03</p>
+            <p>Email: recipes@gmail.com</p>
             <div>
               <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-white me-2"><i className="bi bi-facebook"></i></a>
               <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-white me-2"><i className="bi bi-twitter"></i></a>
@@ -33,7 +31,7 @@ const Footer = () => {
         </div>
         <div className="row mt-4">
           <div className="col text-center">
-            <p className="mb-0">&copy; 2024 Your Company. All rights reserved.</p>
+            <p className="mb-0">&copy; 2024 Flavor Fusion Cuisine. All rights reserved.</p>
           </div>
         </div>
       </div>
