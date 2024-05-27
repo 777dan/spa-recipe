@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/spa-recipe/static/css/main.422a8285.css",
+    "main.js": "/spa-recipe/static/js/main.200dcc67.js",
+    "index.html": "/spa-recipe/index.html",
+    "main.422a8285.css.map": "/spa-recipe/static/css/main.422a8285.css.map",
+    "main.200dcc67.js.map": "/spa-recipe/static/js/main.200dcc67.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.422a8285.css",
+    "static/js/main.200dcc67.js"
+  ]
+}
