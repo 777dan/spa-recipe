@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import RecipeCard from "../components/RecipeCard";
+import Modal from "../components/Modal";
 import { fetchRandomRecipes } from "../utils/utils";
 
 const Home = ({ searchResult = [] }) => {
@@ -36,6 +37,9 @@ const Home = ({ searchResult = [] }) => {
           />
         ))}
       </div>
+      <Modal
+        cardDetails={cardDetails}
+      />
       {/* <div className="modal" id="cardModal">
         <div className="modal-dialog">
           <div className="modal-content">

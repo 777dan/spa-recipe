@@ -1,10 +1,12 @@
 import React from 'react';
 import RecipeCard from "../components/RecipeCard";
 import { useState, useEffect } from "react";
+import Modal from "../components/Modal";
 import { fetchRandomRecipes } from "../utils/utils";
 
 const About = () => {
     const [randRecipe, setRandRecipe] = useState([]);
+    const [cardDetails, setCardDetails] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -44,7 +46,10 @@ const About = () => {
                 key={randRecipe.id}
                 image={randRecipe.image}
                 title={randRecipe.title}
-                setCardDetails={null}
+                setCardDetails={setCardDetails}
+            />
+            <Modal
+                cardDetails={cardDetails}
             />
         </div>
     );

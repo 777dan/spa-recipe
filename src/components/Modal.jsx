@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Modal = () => {
+const Modal = ({cardDetails}) => {
     return (
         <div className="modal" id="cardModal">
             <div className="modal-dialog">
